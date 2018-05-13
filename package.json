@@ -1,0 +1,27 @@
+{
+  "name": "howler-pixi-loader-middleware",
+  "version": "1.0.0",
+  "description": "Loader middleware for PixiJS which maps audio files to Howl instances",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seleb/HowlerPixiLoaderMiddleware.git"
+  },
+  "keywords": [
+    "javascript",
+    "howler",
+    "pixi",
+    "loader"
+  ],
+  "author": "Sean S. LeBlanc <sean.s.leblanc@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/seleb/HowlerPixiLoaderMiddleware/issues"
+  },
+  "homepage": "https://github.com/seleb/HowlerPixiLoaderMiddleware#readme",
+  "dependencies": {
+    "howler": "^2.0.9",
+    "pixi.js": "^4.7.0"
+  }
+}

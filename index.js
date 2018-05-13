@@ -1,8 +1,14 @@
-import {Howl} from 'Howler';
+import {
+	Howl
+} from 'Howler';
+import {
+	loaders
+} from 'pixi.js';
+
 
 export default function HowlerMiddleware(resource, next) {
 	if (resource && ["wav", "ogg", "mp3"].includes(resource.extension)) {
-		resource._setFlag(PIXI.loaders.Resource.STATUS_FLAGS.LOADING, true);
+		resource._setFlag(loaders.Resource.STATUS_FLAGS.LOADING, true);
 		const options = JSON.parse(JSON.stringify(resource.metadata));
 		options.src = [resource.url];
 		options.onload = function () {
