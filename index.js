@@ -7,7 +7,7 @@ import {
 
 
 export default function HowlerMiddleware(resource, next) {
-	if (resource && ["wav", "ogg", "mp3"].includes(resource.extension)) {
+	if (resource && ["wav", "ogg", "mp3", "mpeg"].includes(resource.extension)) {
 		resource._setFlag(loaders.Resource.STATUS_FLAGS.LOADING, true);
 		const options = JSON.parse(JSON.stringify(resource.metadata));
 		options.src = [resource.url];
