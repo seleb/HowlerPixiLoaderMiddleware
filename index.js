@@ -1,6 +1,6 @@
 import {
 	Howl
-} from 'Howler';
+} from 'howler';
 import {
 	loaders
 } from 'pixi.js';
