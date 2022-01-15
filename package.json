@@ -20,6 +20,25 @@
     "url": "https://github.com/seleb/HowlerPixiLoaderMiddleware/issues"
   },
   "homepage": "https://github.com/seleb/HowlerPixiLoaderMiddleware#readme",
+  "release": {
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+      "@semantic-release/changelog",
+      "@semantic-release/npm",
+      "@semantic-release/github",
+      [
+        "@semantic-release/git",
+        {
+          "assets": [
+            "CHANGELOG.md",
+            "package.json",
+            "package-lock.json"
+          ]
+        }
+      ]
+    ]
+  },
   "peerDependencies": {
     "howler": "^2.0.0",
     "pixi.js": ">=4.0.0 <7.0.0"
