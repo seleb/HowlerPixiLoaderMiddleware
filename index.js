@@ -1,27 +1,31 @@
+import { Howl } from 'howler';
 import {
-	Howl
-} from 'howler';
-import {
-	LoaderResource
+	ExtensionType,
+	LoaderParserPriority,
+	utils,
 } from 'pixi.js';
 
-
-export default function HowlerMiddleware(resource, next) {
-	if (resource && ["wav", "ogg", "mp3", "mpeg"].includes(resource.extension)) {
-		resource._setFlag(LoaderResource.STATUS_FLAGS.LOADING, true);
-		const options = JSON.parse(JSON.stringify(resource.metadata));
-		options.src = [resource.url];
-		options.onload = function () {
-			resource.complete();
-			next();
-		};
-		options.onloaderror = function (id, message) {
-			console.error(resource);
-			resource.abort(message);
-			next();
-		}
-		resource.data = new Howl(options);
-	} else {
-		next();
-	}
+export default {
+	extension: {
+		name: 'Howler Loader Parser',
+		priority: LoaderParserPriority.Normal,
+		type: ExtensionType.LoadParser,
+	},
+	test(url) {
+		return (
+			utils.path.extname(url).includes('.mp3') ||
+			utils.path.extname(url).includes('.wav') ||
+			utils.path.extname(url).includes('.ogg') ||
+			utils.path.extname(url).includes('.mpeg')
+		);
+	},
+	async load(url) {
+		return new Promise((resolve, reject) => {
+			const howl = new Howl({
+				src: [url],
+				onload: () => resolve(howl),
+				onloaderror: (id, message) => reject(message),
+			});
+		});
+	},
 }
