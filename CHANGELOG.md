@@ -1,3 +1,15 @@
+# [4.0.0](https://github.com/seleb/HowlerPixiLoaderMiddleware/compare/v3.0.0...v4.0.0) (2022-12-10)
+
+
+### Features
+
+* Update for Pixi 7.x ([8540e63](https://github.com/seleb/HowlerPixiLoaderMiddleware/commit/8540e63beb70155b177b4de26484175a77be57a5))
+
+
+### BREAKING CHANGES
+
+* Updated for Pixi 7.x, and dropped support for Pixi 6.x. Instead of adding middleware to the loader, this is now a loader parser extension (see example in README for new integration instructions).
+
 # [3.0.0](https://github.com/seleb/HowlerPixiLoaderMiddleware/compare/v2.0.0...v3.0.0) (2022-01-15)
 
 

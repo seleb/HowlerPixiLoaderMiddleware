@@ -1,6 +1,6 @@
 {
   "name": "howler-pixi-loader-middleware",
-  "version": "3.0.0",
+  "version": "4.0.0",
   "description": "Loader middleware for PixiJS which maps audio files to Howl instances",
   "main": "index.js",
   "scripts": {},
