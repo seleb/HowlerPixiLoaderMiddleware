@@ -1,3 +1,10 @@
+## [4.0.1](https://github.com/seleb/HowlerPixiLoaderMiddleware/compare/v4.0.0...v4.0.1) (2023-12-03)
+
+
+### Bug Fixes
+
+* unload `Howl` object when asset is unloaded ([de97fa0](https://github.com/seleb/HowlerPixiLoaderMiddleware/commit/de97fa0ec2027eedb5b8f69e56663b98c022b95c))
+
 # [4.0.0](https://github.com/seleb/HowlerPixiLoaderMiddleware/compare/v3.0.0...v4.0.0) (2022-12-10)
 
 
