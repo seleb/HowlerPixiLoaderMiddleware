@@ -28,4 +28,7 @@ export default {
 			});
 		});
 	},
+	unload(asset) {
+		asset.unload();
+	},
 }
