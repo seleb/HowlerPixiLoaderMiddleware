@@ -2,7 +2,7 @@ import { Howl } from 'howler';
 import {
 	ExtensionType,
 	LoaderParserPriority,
-	path,
+	utils,
 } from 'pixi.js';
 
 export default {
@@ -13,10 +13,10 @@ export default {
 	},
 	test(url) {
 		return (
-			path.extname(url).includes('.mp3') ||
-			path.extname(url).includes('.wav') ||
-			path.extname(url).includes('.ogg') ||
-			path.extname(url).includes('.mpeg')
+			utils.path.extname(url).includes('.mp3') ||
+			utils.path.extname(url).includes('.wav') ||
+			utils.path.extname(url).includes('.ogg') ||
+			utils.path.extname(url).includes('.mpeg')
 		);
 	},
 	async load(url) {
