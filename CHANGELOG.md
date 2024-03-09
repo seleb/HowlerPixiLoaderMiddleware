@@ -1,3 +1,15 @@
+# [5.0.0](https://github.com/seleb/HowlerPixiLoaderMiddleware/compare/v4.0.3...v5.0.0) (2024-03-09)
+
+
+### Bug Fixes
+
+* use `path` import directly ([81ee657](https://github.com/seleb/HowlerPixiLoaderMiddleware/commit/81ee6579d54aa1fd2ff460d625d16a45736abd98))
+
+
+### BREAKING CHANGES
+
+* Updated to support Pixi 8.x, and dropped support for Pixi 7.x.
+
 ## [4.0.3](https://github.com/seleb/HowlerPixiLoaderMiddleware/compare/v4.0.2...v4.0.3) (2024-03-09)
 
 
