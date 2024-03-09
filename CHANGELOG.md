@@ -1,3 +1,10 @@
+## [4.0.3](https://github.com/seleb/HowlerPixiLoaderMiddleware/compare/v4.0.2...v4.0.3) (2024-03-09)
+
+
+### Reverts
+
+* Revert "fix: use `path` import directly" ([fcaceaf](https://github.com/seleb/HowlerPixiLoaderMiddleware/commit/fcaceaf3979feb56c08cef92def836945064951b))
+
 ## [4.0.2](https://github.com/seleb/HowlerPixiLoaderMiddleware/compare/v4.0.1...v4.0.2) (2024-03-09)
 
 
